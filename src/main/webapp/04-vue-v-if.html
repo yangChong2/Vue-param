@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <div v-if="user">div1</div>
+    <div v-else-if="username">div2</div>
+    <div v-else>div3</div>
+    <hr>
+    <div v-show="username==1">div-show</div>
+</div>
+<script src="js/vue.js"></script>
+<script>
+    // 创建vue核心对象
+    new Vue({
+        el: "#app",
+        data(){
+            return {
+                username: ''
+            }
+        }
+    });
+</script>
+</body>
+</html>
